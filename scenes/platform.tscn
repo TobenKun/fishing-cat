@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqcmdjdmltukq"]
+
+[ext_resource type="Texture2D" uid="uid://dtfc1dws2lls1" path="res://Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_ASSET_PACK_V2.1/Sunnyside_World_Assets/Elements/Animals/carrot_05.png" id="1_mi635"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
+size = Vector2(12, 12)
+
+[node name="Platform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mi635")
+region_rect = Rect2(0, 0, 12.3559, 12.786)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_s8bxr")
+one_way_collision = true
